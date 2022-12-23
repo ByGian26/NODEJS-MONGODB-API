@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Paolo Guerrero",
+    "age": "39",
+    "email": "pg9@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a5c1a7d4f70a93a4f73d91 HTTP/1.1
+
+### 
+PUT http://localhost:9000/api/users/63a5c1a7d4f70a93a4f73d91 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Cristian Cueva",
+    "age": "30",
+    "email": "CC10@gmail.com"
+}
+
+###
+DELETE  http://localhost:9000/api/users/63a5c1a7d4f70a93a4f73d91 HTTP/1.1
